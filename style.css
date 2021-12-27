@@ -1,5 +1,10 @@
 body {
     font-family: 'Lucida Grande';
+    overflow-wrap: break-word;
+    background: linear-gradient(130deg, rgba(171,255,219,0.75) 20%, rgba(255,255,255,1) 50%);
+
+
+
 }
 
 /*#header{
@@ -14,19 +19,26 @@ body {
     
 }*/
 
+.main-para {
+    font-size: clamp(0.8em, 1.05em, 1.06em);
+
+}
+
 #sidebar{
     background: rgb(0, 0, 0);
     width: 30vw;
     max-width: 200px;
     height: 100vh;
     margin: 0px 35px 0px 0px;
+
     padding: 10px;
     position: sticky;
     top: 0;
-
     float: left;
     display: flex;
     flex-direction: column;
+
+    
 }
 
 #sidebar a {
@@ -121,4 +133,73 @@ body {
     color:white;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
+}
+
+#bar-1 {
+    width: 20px;
+    height: 80vh;
+    margin-right: 2.5vw;
+
+    background: black;
+    float: right;
+    position: relative;
+}
+
+#bar-1:after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    position: absolute;
+    bottom: 0px;
+
+
+    border-bottom: 35px solid rgb(255, 255, 255);
+    border-top: 5px solid transparent;
+    border-left: 25px solid transparent;
+}
+
+#bar-2 {
+    width: 15px;
+    height: 50vh;
+    margin-right: 1.8vw;
+
+    background: black;
+    float: right;
+    position: relative;
+}
+
+#bar-2:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    position: absolute;
+    bottom: 0px;
+
+
+    border-bottom: 20px solid rgb(255, 255, 255);
+    border-top: 5px solid transparent;
+    border-left: 15px solid transparent;
+}
+
+.main {
+    top: 0;
+    width: 65vw;
+
+}
+.main-para {
+    float:left;
+    min-width: 50vw;
+    max-width: 49vw;
+}
+
+#challenge {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 3em;
+    text-align: center;
+    top: 0;
+    display: block;
+    text-align: center;
+    margin-top: -100px;
 }
